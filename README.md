@@ -6,7 +6,7 @@ Admin Information: <br>
 Username:- shubham kumar yadav. <br>
 Password:- shubham16122001.
 
-XAMPP control Panel is used For Databases
+XAMPP control Panel is used For this Project and Databases.
 1. open XAMPP and Start Apache.
 2. Start MySQL and click on Admin.
 3. Add new Database with name "chat" and create one database.
