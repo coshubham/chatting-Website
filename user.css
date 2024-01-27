@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); 
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  text-decoration: none; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    position:relative;
+    width: 72.5rem;
+    background:#676767; 
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-weight: 700;
+    color: #333;
+}
+.wrapper .users{
+    position: relative;
+    top: 3rem;
+    left: 16rem;
+    height: auto;
+    border-radius: 20px;
+    border-top: solid 2.6px  #4d1fe46f;
+    border-bottom: solid 2.6px rgba(232, 43, 43, 0.502);
+    border-left:solid 6.2px #4d1fe46f;
+    border-right:solid 6.2px rgba(232, 43, 43, 0.502);
+    width: 66%;
+    /* background:rgba(255, 255, 255, 0.174); */
+    background-color:rgb(230, 226, 226);
+}
+.users{
+    padding: 25px 30px;
+}
+.users header,
+.users-list a{
+    display:flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+:is(.users, .users-list) .content{
+    display: flex;
+    align-items: center;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.users header .content img{
+    height: 55px;
+    width: 55px;
+}
+:is(.users, .users-list) .details{
+    position: relative;
+    top: 6px;
+    margin-left: 12px;
+    color: #000;        
+    }
+:is(.users, .users-list) .details span{
+    font-size: 1.1rem;
+    font-family: 'cooper';
+}
+.users header .logout{
+    position: relative;
+    left: 0.9rem;
+    border: #333 1px solid;
+    color: #333;
+    font-size: 17px;
+    padding: 7px 15px;
+    background-image: linear-gradient(to right, #ff7582,whitesmoke);
+    font-family: 'cooper';
+    border-radius: 40px;
+    transition: .5s;
+}
+.users header .logout:hover{
+	background:#fc4154;
+    border: lightgreen 4px solid;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.users .search{
+    position: relative;
+    top: 0.8rem;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.users .search .text{
+    position: relative;
+    color: #333;
+    left: 2rem;
+    font-family: 'cooper';
+    font-size: 1.1rem;
+}
+.users .search input{
+    position: absolute;
+    height: 50px;
+    width: 88%;
+    border: 2px solid #676767;
+    padding: 0 20px;
+    font-size: 18.2px;
+    font-weight: 700;
+    border-radius: 50px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.users .search input.active2{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.users .search button{
+    width: 45px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    border:2px solid #ccc;
+    background: #333;
+    cursor: pointer;
+    font-size: 19px;
+    transition: a11 0.2s ease;
+}
+.users .search button.active2{
+    border: 2px solid darkgreen;
+    color: #fff;
+    background: #13e09c;
+}
+.users .search button.active2 i::before{
+    content: "\f00d";
+    }
+.users-list{
+ max-height: 350px;
+ overflow-y: auto;
+}
+:is(.users-list, .chat-box)::-webkit-scrollbar{
+    width: 0px;
+}
+.users-list a{
+    margin-bottom: 15px;
+    page-break-after: 10px;
+    padding-right: 15px;
+    border-bottom-color: #000;
+}
+.users-list a:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+.users-list a .content img{
+    height: 45px;
+    width: 45px;
+}
+.users-list a .status-dot{
+    font-size: 12px;
+    color: #38d39f;
+}
+/*we use this class name in php to show offline status*/
+.users-list a .status-dot.offline{
+    color: #fff;
+}
+
+
+
+
+/*Chat Area Css code*/
+.wrapper .chat-area{
+    position: relative;
+    top: 0.1rem;
+    left: 23rem;
+    height: auto;
+    border-radius: 20px;
+    width: 42%;
+    background:#000;
+}
+.chat-area header{
+    background: #000;
+    border-radius: 20px 20px 0px 0;
+    display: flex;
+    border-bottom:solid 0.1px #000;
+    align-items: center;
+    padding: 0px 10px ;
+}
+.info{
+    color: whitesmoke;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: -3.1rem;
+    left: 4rem;
+}
+.info p{
+    color: whitesmoke;
+}
+.chat-area header .back-icon{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.chat-area header img{
+    position: relative;
+    top: 0.7rem;
+    height: 63px;
+    width: 63px;
+    padding: 10px 10px;
+}
+.chat-area header span{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 900;
+}
+.chat-box{
+    height: 480px;
+    overflow-y: auto;
+    background-image: url(img13.jpg);
+    background-size: 25rem;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box .chat{
+    margin: 15px 0;
+}
+.chat-box .chat p{
+    word-break: break-all;
+    padding: 8px 16px;
+    box-shadow:  0 0px 32px rgb(0 0 0 / 8%),
+                 0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+.chat-box .outgoing{
+    display:flex;
+    align-items: flex-end;
+}
+.outgoing .details {
+    margin-left: auto;
+    margin-top: auto;
+}
+.outgoing .details p{
+    font-size: 13.4px;
+    background-image: linear-gradient(25deg, #f04393, #f9c449);
+    color: #fff;
+    border-radius: 20px 20px 1px 20px;
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+}
+.chat-box .incoming img{
+    height: 43px;
+    width: 45px;
+}
+.incoming .details {
+    margin-left: 6px;
+    margin-right:6rem;
+    margin-top:auto;
+    
+}
+.incoming .details p{
+    font-size: 13.4px;
+    background-image: linear-gradient(25deg, #56c596,#7be495);
+    color: #fff;
+    border-radius: 2px 20px 20px 20px;
+}
+.chat-area .typing-area{
+    height:35%;
+    background:#333;
+    border-top:solid 0.3px #000;
+    border-radius:20px 20px 20px 20px ;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.typing-area input{
+    width:  calc(100% - 58px);
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 650;
+    padding: 0 13px;
+    border-radius: 100px;
+    outline:none;
+}
+.typing-area button{
+    color: #fff;
+    background: #333 ;
+    width: 55px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 23.6px;
+}
+.typing-area button:hover{
+    background: #05653d ;
+    
+}

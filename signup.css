@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); 
+.signup{
+	position: relative;
+	top: 20px;
+	left: 42rem;
+	width: 400px;
+	height: 550px;
+	border: 2px solid rgb(40, 39, 39);
+	border-radius: 50px;
+	background:rgba(231, 228, 228, 0.174);
+}
+.error-txt{
+	position:absolute;
+	top: 3.8rem;
+	left: 4.2rem;
+	color: #721c24;
+	background: #f8d7da;
+	border-radius: 3px;
+	border: 1px solid #f5c6cf;
+	font-family: 'cooper black';
+	display: none;
+}
+i{
+	position: relative;
+	color: rgba(240, 226, 226, 0.856);
+	font-size: 1.4rem;
+	top: -5.1rem;
+	cursor: pointer;
+	left: 17.6rem;
+}
+i.active::before{
+	content: "\f070";
+	color: #fff;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem 1.5rem;
+}
+form{
+	position: relative;
+	top: -3rem;
+}
+ label{
+	position: relative;
+	left: 20px;
+	top: -12px;
+	width: 51%;
+	color: #f0f0ff;
+	border-radius: 150px 150px 150px 1px;
+    background-color: #6bd8a9;
+	border-bottom: solid rgba(82, 71, 247, 0.991) 5px ;
+    border-left: solid rgb(245, 120, 120) 4px;
+    border-top: solid rgb(245, 120, 120) 5px;
+    border-right: solid rgba(82, 71, 247, 0.991) 2px;
+	font-size: 2.6rem;
+	justify-content: center;
+	display: flex;
+	margin: 70px;
+	font-family: 'cooper';
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+	animation:  flicker 3s ease-in-out infinite;
+}
+
+@keyframes flicker{
+    from{
+        text-shadow: 0 0 10px #6bd8a9;
+    }
+	to{
+        text-shadow: 0px 0px 10px #6bd8a9,
+                      0 0 10px #6bd8a9;
+    }
+}
+.photos{
+	position: relative;
+	top: 20rem;
+}
+.file{
+	position: relative;
+	cursor: none;
+	top: -8.4rem;
+	color:whitesmoke;
+	background-color: #333;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	margin: 80px;
+	font-family: 'Cooper Black';
+	width: 36.6%;
+	left: 0.3rem;
+}
+.file2{
+	position: relative;
+	cursor: pointer;
+	top: -13.2rem;
+	left: 1rem;
+	background-color: transparent;
+	font-size: 1rem;
+	color: #0f0f0f;
+	
+}
+input{
+	position: relative;
+	top: -30px;
+	width: 60%;
+	height: 40px;
+	background: #333;
+	color:whitesmoke;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 11.7px;
+	border: none;
+	font-family: 'Cooper Black';
+	font-size: 1.2rem;
+	outline: none;
+	border-radius: 5px;
+}
+input::placeholder{
+	color: rgba(227, 222, 222, 0.92);
+}
+.sign{
+	position: relative;
+	top: -13.4rem;
+	left: -0.5rem;
+	width: 60%;
+	height: 40px;
+}
+p{
+	position: relative;
+	top: -15.6rem;
+	left: 3rem;
+    font-weight: 600;
+	font-size: 18.6px;
+	color:#0f0f0f;
+	cursor: pointer;
+	
+}
+p i{
+	position: relative;
+	cursor: pointer;
+	color:#00e6f6;
+	top: 0.4rem;
+	left: 0rem;
+	border-radius: 20px;
+	font-family: 'Cooper black';
+	font-size: 1.7rem;
+	font-weight: 900;
+}
+.sign{
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background:rgb(150, 26, 26);
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+	animation:  flicker 3s ease-in-out infinite;
+}
+.sign:hover{
+	background: linear-gradient(25deg,  rgb(5, 61, 5), rgb(93, 239, 115));
+}
