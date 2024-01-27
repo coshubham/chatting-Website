@@ -9,9 +9,9 @@ Password:- shubham16122001.
 XAMPP control Panel is used For this Project and Databases.
 1. open XAMPP and Start Apache.
 2. Start MySQL and click on Admin.
-3. Add new Database with name "chat" and create one database.
+3. Create one new Database with name "chat".
 4. Then import the "chat.sql" given in folder.
-5. After import the database Your Project is ready to in use.
+5. After import the database Your Project is ready to use.
 
    Without Importing chat.sql your Project Backend will not work aur I say all project will not work.
 
