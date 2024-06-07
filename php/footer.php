@@ -48,11 +48,7 @@ else{
         <div class="content">
           <span>Welcome to a Realtime chatting website in this website you will capable to chat. This is a secure&#128274; when you chat anyone no one can see&#128584; your chat or I say it will not brought caste to everyone your chat no one can seen&#128584; without your &#x1f4e7;Email and &#128272;Passwords and on one can use your Email multiple time.In this website you will chat any one like with your friends, any random person, and etc.. But you can not send photos,video,calls and etc... In future we will adds all this features. Enjot It &#128526; &#128526; &#128526;.</span>
           <div class="social">
-            <a href="#"><span class="fab fa-facebook-f"></span></a>
-            <a href="#"><span class="fab fa-twitter"></span></a>
-            <a href="#"><span class="fab fa-instagram"></span></a>
-            <a href="#"><span class="fab fa-youtube"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="admin/"><span class="fas fa-solid fa-user"></span></a>
+               <a href="admin/"><span class="fas fa-solid fa-user"></span></a>
           </div>
         </div>
       </div>

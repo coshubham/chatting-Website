@@ -149,7 +149,7 @@ button.cta{
     color: transparent; 
 }
 
-@media screen and (width: 1532.8px) {
+@media screen and (max-width: 1532.8px) {
 	.image{
 		
 		width: 95.7rem;
